@@ -1,7 +1,42 @@
-<<<<<<< HEAD
-# Emailgui
+# Email GUI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+
+## Overview
+
+This project provides a user interface for composing and sending emails. It utilizes Angular and Angular Material for the frontend and a Spring Boot service for the backend.
+
+## Features
+
+### Frontend (Angular)
+
+- **Form Fields**:
+  - **Recipient**: Input field for the recipient's email address.
+  - **Subject**: Input field for the email subject.
+  - **Message**: Textarea for the email body.
+
+- **Progress Bar**:
+  - Displays during form submission to indicate progress.
+
+- **Buttons**:
+  - **Send**: Submits the form data to the backend.
+  - **Reset**: Clears all form fields.
+
+### Backend (Spring Boot)
+
+- **API Endpoint**:
+  - **POST** `/api/sendEmail`
+    - **Description**: Sends an email using the provided details.
+    - **Request Body**:
+      ```json
+      {
+        "to": "recipient@example.com",
+        "subject": "Email Subject",
+        "message": "Email Body"
+      }
+      ```
+
+# Other Information
 
 ## Development server
 
@@ -26,7 +61,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# Email-Gui
-Email sender
->>>>>>> 9885e7526af2d63cc0f347ce30c9ec8fd50e01c2
