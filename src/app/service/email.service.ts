@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EmailService {
-  private baseUrl: string = "send-email-service-production.up.railway.app";
+  private baseUrl: string = "https://artistic-luck-production.up.railway.app";
   
   constructor(private http: HttpClient) { }
   
